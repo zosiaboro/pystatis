@@ -83,12 +83,3 @@ def format_data(data: pd.DataFrame,
         nice_data = pd.DataFrame(nice_dict)
         return nice_data
     return data
-
-from pystatis import db
-db.set_db("genesis")
-
-t = Table(name="42131-0003")
-t.get_data()
-
-print(t.nice_data)
-# t.nice_data
